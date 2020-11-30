@@ -1,0 +1,696 @@
+/*
+Theme Name: WEBS
+Author: Mr Mohamed
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: auto;
+    overflow: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+button,p{
+    font-family: Open Sans;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: 0 5px 10px 0 rgba(0,64,128,.05);
+	background: #fff;
+	z-index: 10;
+}
+nav .logo{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	z-index: 11;
+}
+nav .logo h1{
+	font-size: 40px;
+	color: #4e89ae;
+	margin-top: -8px;
+	position: relative;
+}
+nav .logo h1::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4.5px;
+	background: #4e89ae;
+}
+nav .menu{
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	background: #fff;
+	z-index: 1;
+}
+nav .menu ul{
+	list-style: none;
+	display: inline-flex;
+	margin-right: 50px;
+}
+nav .menu ul li a{
+	display: block;
+	padding: 27px 50px;
+	cursor: pointer; 
+	font-size: 20px;
+	color: #666;
+	position: relative;
+}
+nav .menu ul li a:hover{
+	color: #4e89ae;
+	transition: all .3s ease-out 0s;
+}
+nav .menu ul li a::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #4e89ae;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+nav .menu ul li a:hover::before{
+	transform: scaleX(1);
+}
+nav .menu ul li a.main{
+	color: #4e89ae!important;
+}
+nav .menu ul li a.main::before{
+	transform: none!important;
+}
+nav .bar{
+	background: #fff;
+	z-index: 10;
+}
+nav .bar .fas{
+	display: block;
+	padding: 27px 50px;
+	cursor: pointer; 
+	font-size: 28px;
+	color: #666;
+	position: relative;
+	display: none;
+}
+nav .bar .fas::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #4e89ae;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+nav .bar .fas:hover::after{
+	transform: scaleX(1);
+}
+.searchBar{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 100%;
+	right: 129px;
+	transition: all .2s ease-out 0s;
+	z-index: -3;
+	top: -81px;
+}
+.searchSHOW{
+	top: 81px!important;
+}
+.searchBar form{
+	display: flex;
+	z-index: -1;
+}
+.searchBar input{
+	width: 300px;
+	height: 40px;
+	background: #FFF;
+	color: #000;
+	font-size: 15.5px;
+	padding-left: 8px;
+	font-family: Roboto;
+	border: 2px solid #4e89ae;
+	outline: none;
+	z-index: -1;
+	pointer-events: 
+}
+.searchBar button{
+	padding: 0 17px;
+	background: #4e89ae;
+	border: 2px solid #4e89ae;
+}
+.searchBar button .fas{
+	font-size: 20px;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.12),rgba(0,0,0,0.12)),url(img/women.jpg);
+	background-size: cover;
+	position: relative;
+}
+.container .title{
+	position: absolute;
+	top: 30%;
+	left: 150px;
+}
+.container .title h1{
+	font-size: 60px;
+	color: #31326f;
+	font-family: Roboto Slab;
+	margin-bottom: 30px;
+}
+.container .title ul{
+	display: block;
+	margin-bottom: 17px;
+	margin-left: 20px;
+}
+.container .title ul li{
+	margin: 15px 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+}
+.container .title button{
+	padding: 14px 24px;
+	background: #31326f;
+	color: #fff;
+	position: relative;
+	font-size: 18px;
+	font-weight: 600;
+	float: right;
+	z-index: 1;
+}
+.container .title button:hover{
+	color: #31326f;
+}
+.container .title button::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: scaleX(0);
+	transition: transform .3s;
+	transform-origin: 0 0;
+	z-index: 1;
+}
+.container .title button:hover::before{
+	transform: scaleX(1);
+	z-index: -1;
+}
+.content{
+	width: 100%;
+	padding: 70px 0;
+	background: #fff;
+}
+.content .flex{
+	width: 1170px;
+	margin: auto;
+	padding: 0 0 120px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content .flex .title{
+	width: 100%;
+	padding: 20px 0;
+	padding-bottom: 60px;
+}
+.content .flex .title h1{
+	color: #444;
+	width: 250px;
+	font-size: 38px;
+	border: none;
+	border-right: 4px solid #555;
+	border-left: 4px solid #555;
+	padding: 0 40px 0 15px;
+	text-transform: uppercase; 
+	transition: all .3s ease-out 0s;
+}
+.content .flex .title h1:hover{
+	width: 300px;
+	background: #4e89ae;
+	color: #fff;
+}
+.content .flex .flex1{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+.content .flex .flex1 .img{
+	width: 100%;
+}
+.content .flex .flex1 .img img{
+	width: 100%;
+}
+.content .flex .flex1 .text{
+	max-width: 100%;
+	padding: 15px 0;
+}
+.content .flex .flex1 .text h1{
+	font-size: 28px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #333;
+}
+.content .flex .flex1 .text p{
+	font-size: 15px;
+	color: #555;
+	line-height: 24px;
+}
+.content .flex .flex1 .button{
+	max-width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.content .flex .button button{
+	padding: 12px 24px;
+	background: #fff;
+	color: #222;
+	border: 3Px solid #222;
+	font-size: 17px;
+	font-weight: 600;
+	letter-spacing: 1.5;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+}
+.content .flex .button button::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #222;
+	transform: scaleX(0);
+	transform-origin: 0 0;
+	transition: transform .3s;
+	z-index: 1;
+}
+.content .flex .button button:hover{
+	color: #eee;
+}
+.content .flex .button button:hover::before{
+	transform: scaleX(1);
+	z-index: -1;
+}
+.content .flex2 .title{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.content .flex2 .text p{
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}
+.content .flex2 .button{
+	width: 100%;
+	padding-top: 50px;
+}
+.content .flex2 .button button{
+	width: 100%;
+}
+.content .flex2 .button button::before{
+	transition: transform .6s;
+}
+footer{
+	width: 100%;
+	background: #111;
+	padding: 70px 0;
+}
+footer .Bigfoot{
+	width: 1170px;
+	margin: auto;
+	display: flex;
+}
+footer .Bigfoot .foot{
+	display: flex;
+	flex-direction: column;
+}
+footer .Bigfoot .foot1{
+	width: 40%;
+}
+footer .Bigfoot .foot2{
+	width: 60%;
+}
+footer .Bigfoot .foot .links{
+	max-width: 100%;
+}
+footer .Bigfoot .foot .links ul{
+	list-style: none;
+}
+footer .Bigfoot .foot .links ul li{
+	display: block;
+	padding: 0 0 6px 0;
+	font-size: 18px;
+	color: #fff;
+}
+footer .Bigfoot .foot .links ul li a{
+	color: #fff;
+}
+footer .Bigfoot .foot .links ul li a:hover{
+	text-decoration: underline;
+}
+footer .Bigfoot .foot .links ul li:first-child{
+	font-size: 24px;
+	padding: 0 0 11px 0;
+}
+footer .Bigfoot .foot .media{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 48px 0;
+}
+footer .Bigfoot .foot .media .fab{
+	font-size: 50px;
+	color: #999;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: color .3s ease-out 0s;
+}
+footer .Bigfoot .foot .media .fab:hover{
+	color: #ff2052;
+}
+footer .Bigfoot .foot .mediaTitle{
+	text-align: center;
+	color: #fff;
+}
+footer .Bigfoot .foot .mediaTitle h3{
+	font-size: 22px;
+	font-weight: 400;
+}
+.header{
+	width: 100%;
+	background: #111;
+	position: fixed;
+	top: 82px;
+	z-index: 10;
+	display: none;
+}
+.dis{
+	display: block!important;
+}
+.header .menu{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: #111;
+	z-index: 10;
+}
+.header .menu ul{
+	width: 95%;
+	margin: auto;
+	list-style: none;
+	display: block;
+}
+.header .menu ul li a{
+	display: block;
+	padding: 27px 50px;
+	cursor: pointer; 
+	font-size: 22px;
+	color: #666;
+	position: relative;
+}
+.header .menu ul li a:hover{
+	color: #4e89ae;
+	transition: all .3s ease-out 0s;
+}
+.header .menu ul li a::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #4e89ae;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+.header .menu ul li a:hover::before{
+	transform: scaleX(1);
+}
+.header .menu ul li a.main{
+	color: #4e89ae!important;
+}
+.header .menu ul li a.main::before{
+	transform: none!important;
+}
+.headImage{
+    width: 100%;
+    height: 280px;
+    margin-top: 81px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/work.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headImage .border{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #4e89ae;
+    padding: 60px 0;
+}
+.headImage .border h1{
+    color: #eee;
+    font-size: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+.headImage .border h1::before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #ff2052;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .3s ease-out 0s;
+}
+.headImage .border h1:hover::before{
+    transform: scaleX(1);
+}
+.Aflex{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 0 180px 0;
+}
+.Aflex .Aflex1{
+    width: 75%;
+}
+.Aflex .Aflex1 h1{
+    color: #444;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+.Aflex .Aflex1 h1 .fas{
+    font-size: 18px!important;
+    margin-right: 10px;
+    position: relative;
+    bottom: 2.66px;
+}
+.Aflex .Aflex1 p{
+    color: #777;
+    line-height: 24px;
+    font-size: 14px;
+    max-width: 90%;
+}
+.Aflex .Aflex1 p:nth-child(3){
+    margin-top: 16px;
+}
+.Aflex .Aflex1 .btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+.Aflex .Aflex1 .btns button{
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 16px;
+    background: #4e89ae;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+.Aflex .Aflex1 .btns button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff2052;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: transform .3s;
+    z-index: 1;
+}
+.Aflex .Aflex1 .btns button:hover::before{
+    transform: scaleX(1);
+    z-index: -1;
+}
+.Aflex .Aflex2{
+    width: 25%;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.5);
+}
+@media screen and (min-width:1060px){
+	.header{
+		display: none!important;
+	}
+	.search2{
+		display: none;
+	}
+}
+@media screen and (max-width:1060px){
+	nav .menu{
+		display: none;
+	}
+	nav .bar .fas{
+		display: block;
+	}
+	.searchBar{
+		right: 0;
+		justify-content: center;
+	}
+	.search1{
+		display: none;
+	}
+    .Aflex{
+        flex-direction: column;
+    }
+    .Aflex .Aflex1{
+        width: 100%;
+        
+    }
+    .Aflex .Aflex1 p{
+        max-width: 100%;
+    }
+    .Aflex .Aflex1 .btns{
+        width: 100%;
+    }
+    .Aflex .Aflex2{
+        width: 100%;
+        margin-top: 30px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:1200px){
+	.content .flex{
+		width: 87%;
+	}
+	footer .Bigfoot{
+		width: 87%;
+	}
+    .Aflex{
+        width: 97%;
+    }
+}
+@media screen and (max-width:800px){
+	.content .flex{
+		flex-direction: column;
+	}
+	.content .flex .flex1{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.container .title{
+		left: 100px;
+	}
+	.container .title h1{
+		font-size: 50px;
+	}
+}
+@media screen and (max-width:600px){
+	.content .flex{
+		width: 97%;
+	}
+	footer .Bigfoot{
+		width: 97%;
+	}
+	footer .Bigfoot{
+		flex-direction: column;
+	}
+	footer .Bigfoot .foot{
+		width: 100%;
+		text-align: center!important;
+	}
+	footer .Bigfoot .foot2{
+		border-radius: 4px;
+		background: #eee;
+		padding: 20px 0;
+		margin-top: 20px;
+	}
+	footer .Bigfoot .foot2 h3{
+		color: #111;
+	}
+	footer .Bigfoot .foot2 .fab{
+		color: #111!important;
+	}
+	.container .title{
+		right: 10px;
+		left: 10px;
+	}
+	.container .title h1{
+		font-size: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
